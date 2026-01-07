@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900;&display=swap');
+/* BODY FOR THE WHOLE PAGE  */
 *{
     margin: 0;
     padding: 0;
@@ -7,9 +8,10 @@
 }
 
 a{
-    color: #fff;
+    color: #ffff;
     text-decoration: none;
 }
+/* FOR THE SOCIAL LOGO'S */
 .navbar{
     position: fixed;
     left: 0;
@@ -53,6 +55,7 @@ transition: .5s;
     color: #7cf03d;
 
 }
+/* FOR THE LEFT SIDE TEXT INFO  */
 .home{
     display: flex;
     align-items: center;
@@ -65,19 +68,21 @@ opacity: 0;
 animation: show-content 1.5s linear forwards;
 animation-delay: 1.6s;
 }
-/* HEADING 1 */
+/* HEADING 1 (YASH TIWARI) */
 .home-info h1{
 font-size: 55px;
 }
-/* HEADING 2 */
+/* HEADING 2  ( PURSUING IN INTREGRAL UNIVERSITY*/
 .home-info h2{
     font-size: 32px;
     margin-top: -10px;
 }
+/* FOR THE PARAGRAPH ( CURRENTLY PURSUING IN INTREGRAL UNI..... ) */
 .home-info p{
     font-size: 16px;
     margin: 10px 0 25px;
 }
+/* FOR THE RESSUME BUTTON  */
 .btn{
     display: inline-block;
     padding: 10px 30px;
@@ -90,20 +95,26 @@ font-size: 55px;
     font-weight: 600;
     transition: .5s;
 }
+/* FOR THE LIGHTNING OF THE RESSUME DOWNLOAD BUTTON  */
 .btn:hover{
     background: transparent;
     color: #7cf03d;
     box-shadow: none;
 }
+/* FOR THE COLOR CHANGE OF HEADING 1 (YASH TIWARI) */
 .home-info h1{
     color: #fff;
 }
+/* FOR THE COLOUR CHANGE OF HEADING 2  ( PURSUING IN INTREGRAL UNIVERSITY*/
 .home-info h2{
     color: #fff;
 }
+/* FOR THE COLOUR CHANGE OF PARAGRAPH ( CURRENTLY PURSUING IN INTREGRAL UNI..... ) */
 .home-info p{
     color: #fff;
 }
+/* FOR THE BITMOJI  */
+/* for the red outer outline of the bitmoji circle  */
 .home-img .img-box{
     position: relative;
     width: 32vw;
@@ -123,6 +134,7 @@ font-size: 55px;
     height: 500px;
     background: conic-graient(transparent , transparent , transparent , color #7cf03d);
 }
+/* for inner purple bakcground of the bitmoji circle  */
 .home-img .img-box .img-item{
     position: relative;
     width: 100%;
@@ -148,6 +160,7 @@ font-size: 55px;
     display: flex;
     z-index: -1;
 }
+/* for giving the animation to the bar  */
 .bars-animation .bar{
     width: 100%;
     height: 100%;
@@ -160,4 +173,68 @@ animation-delay: calc(.1s * var(--i));
 {
 transform: translateY(0%);
 }
+}
+/* for the heading3 github projects */
+#projects {
+  background-color: #1f242d;
+  padding: 80px 40px;
+}
+
+#projects h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+#project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background-color: #2a303c;
+  border-radius: 12px;
+  padding: 20px;
+  color: #e6e6e6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.project-card h3 {
+  color: #00ff99;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.project-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00ff99;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+.project-card strong {
+  color: #00ff99;
+}
+/* for the heading3 github projects */
+#projects .headi{
+    text-align: center;
+    font-size: 100px;
+    color: #fff;
+    text-decoration: underline;
 }
